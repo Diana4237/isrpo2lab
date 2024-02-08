@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div id="TaskSecondSolution">
+     <form method="post">
+        <p>
+            <label>Введите длины сторон треугольника:</label>
+        </p>
+        <p>
+            <label>а=</label>
+            <input type="number" name="FirstDate1" />
+            <label>b=</label>
+            <input type="number" name="FirstDate2" />
+            <label>c=</label>
+            <input type="number" name="FirstDate3" />
+        </p>
+         <p>
+             <input type="submit" value="Вычислить" />
+            
+        </p>
+        <p>
+            <label>Треугольник со сторонами:</label>
+            <label>@ViewBag.tr</label>
+            <label>@ViewBag.be</label>
+        </p>
+        <p>
+            <label>Площадь:</label>
+            <label>@ViewBag.S</label>
+        </p>
+         <p>
+             <label>Периметр:</label>
+             <label>@ViewBag.P</label>
+            
+        </p>
+        <p>
+            <label>Точка пересечения медиан:</label>
+            <label>@ViewBag.T</label>
+        </p>
+    </form>
+    
+</div>

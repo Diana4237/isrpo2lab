@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div id="TaskFirstSolution">
+    <form method="post">
+        <p>
+            <label>Дата рождения одного:</label>
+        </p>
+        <p>
+            <label>Число:</label>
+            <input type="number" name="FirstDate1" />
+            <label>Месяц:</label>
+            <input type="number" name="FirstDate2" />
+            <label>Год:</label>
+            <input type="number" name="FirstDate3" />
+        </p>
+        
+        <p>
+            <label>Дата рождения другого:</label>
+        </p>
+        <p>
+            <label>Число:</label>
+            <input type="number" name="SecondDate1" />
+            <label>Месяц:</label>
+            <input type="number" name="SecondDate2" />
+            <label>Год:</label>
+            <input type="number" name="SecondDate3" />
+        </p>
+        <p>
+            <input type="submit" value="Вычислить" />
+
+        </p>
+        <p>
+            <label>Результат:</label>
+            <label>@ViewBag.H</label>
+
+        </p>
+
+    </form>
+
+</div>
