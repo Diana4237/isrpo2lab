@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Diagnostics;
+using System.Drawing;
 using исрпо2.Models;
 
 namespace исрпо2.Controllers
@@ -114,11 +115,9 @@ namespace исрпо2.Controllers
                 var a = FirstDate1;
                 var b = FirstDate2;
                 var c = FirstDate3;
+
+                ClassTriangle t = new ClassTriangle(a, b, c, Perimetr(a, b, c), Ploshad(a, b, c), Median(a, b, c));
                 
-                ClassTriangle t = new ClassTriangle 
-                {
-                    a=a,b=b,c=c, P=Perimetr(a,b,c),S=Ploshad(a,b,c),Point=Median(a,b,c)
-                };
                 ViewBag.tr= Convert.ToString(t.a)+","+Convert.ToString(t.b) + ","+Convert.ToString(t.c) ;
                 if (a <= 0 || b <= 0 || c <= 0 || a + b < c || b + c < a || a + c < b)
                 {

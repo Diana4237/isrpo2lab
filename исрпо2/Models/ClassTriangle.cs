@@ -8,6 +8,14 @@
         public int P { get; set; }
         public double S { get; set; }
         public double[] Point { get; set; }
-        
+        public ClassTriangle(int a, int b, int c, int p, double s, double[] point)
+        {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            P = p;
+            S = s;
+            Point = point;
+        }
     }
 }
